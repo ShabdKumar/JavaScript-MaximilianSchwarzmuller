@@ -1,28 +1,29 @@
 ## Basics: Variables, Data Types, Operators & Functions (MDN):
-***JavaScript Basics***: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
-***Variables:*** https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables
+**_JavaScript Basics_**: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
-***Operators:*** https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math
+**_Variables:_** https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables
 
-***Functions:*** https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions
+**_Operators:_** https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math
 
-***Arrays:*** https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays
+**_Functions:_** https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions
 
-***Objects:*** https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics
+**_Arrays:_** https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays
 
+**_Objects:_** https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics
 
-***The ECMAScript Standard:*** https://www.ecma-international.org/publications/standards/Ecma-262.htm
-
+**_The ECMAScript Standard:_** https://www.ecma-international.org/publications/standards/Ecma-262.htm
 
 ## Efficient Development & Debugging
 
-***VS Code Docs:*** https://code.visualstudio.com/docs
-***VS Code Keybindings:*** https://code.visualstudio.com/docs/getstarted/keybindings
-***VS Code Extensions Docs:*** https://code.visualstudio.com/docs/editor/extension-gallery
-***Google Chrome DevTools Docs:*** https://developers.google.com/web/tools/chrome-devtools/
+**_VS Code Docs:_** https://code.visualstudio.com/docs
 
+**_VS Code Keybindings:_** https://code.visualstudio.com/docs/getstarted/keybindings
+
+**_VS Code Extensions Docs:_** https://code.visualstudio.com/docs/editor/extension-gallery
+
+**_Google Chrome DevTools Docs:_** https://developers.google.com/web/tools/chrome-devtools/
 
 ## Working with Control Structures (if Statements, Loops, Error Handling)
 
-***Operator Precedence:*** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+**_Operator Precedence:_** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
