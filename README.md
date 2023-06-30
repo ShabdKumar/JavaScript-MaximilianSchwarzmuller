@@ -31,3 +31,7 @@
 **_Expression vs Statement:_** https://stackoverflow.com/questions/12703214/javascript-difference-between-a-statement-and-an-expression
 
 **_switch-case with greater than etc?:_** https://stackoverflow.com/questions/32576618/switch-statement-to-compare-values-greater-or-less-than-a-number/32576647
+
+**_Control Structures (MDN)_**: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
+
+**_JavaScript Loops (MDN)_**: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration

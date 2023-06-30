@@ -266,3 +266,27 @@ outerFor: for (let i = 1; i < 4; i++) {
     }
 }
 // 1
+
+
+/* Error-Handling "try-catch-finally" and "throw" */
+
+function inputValues() {
+    let enteredNumber = parseInt(prompt('Enter a Number:'));
+    if (isNaN(enteredNumber) || enteredNumber <= 0) {
+        throw "Invalid input. Please enter proper positive number";
+    }
+    return enteredNumber;
+};
+
+let userInput1;
+try {
+    userInput1 = inputValues();
+} catch {
+    userInput1 = 100;
+    alert("Since entered number is invalid. So default value is taken as 100.")
+} finally {
+    console.log("All went well.")
+    console.log(`userInput = ${userInput1}`);
+}
+// All went well.
+// userInput = 20
