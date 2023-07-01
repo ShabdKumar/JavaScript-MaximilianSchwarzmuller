@@ -35,3 +35,17 @@
 **_Control Structures (MDN)_**: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 
 **_JavaScript Loops (MDN)_**: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+
+## Behind the Scenes & The (Weird) Past (ES3, ES5) & Present (ES6+) of JavaScript
+
+**_Strict Mode Changes:_** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#Changes_in_strict_mode
+
+**_V8 (Chrome) JS Engine:_** https://hackernoon.com/javascript-v8-engine-explained-3f940148d4ef
+
+**_The SpiderMonkey Engine:_** https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Internals
+
+**_JavaScript Memory Management:_** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management
+
+**_V8's Garbage Collection Logic:_** https://v8.dev/blog/free-garbage-collection
+
+**_Primitive vs Reference Values:_** https://academind.com/learn/javascript/reference-vs-primitive-values
