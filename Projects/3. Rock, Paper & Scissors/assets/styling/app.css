@@ -1,0 +1,25 @@
+body {
+  background-color: floralwhite;
+  padding: 5vh 0;
+}
+
+button {
+  display: block;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  margin: 10px 0px;
+}
+
+#start-game-btn {
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+
+#play-again-btn {
+  background: linear-gradient(to top left, #cc6b5d, #ffb6ac);
+}
+
+#show-game-logs-btn {
+  background: linear-gradient(to top left, #8f7797, #4c3056);
+  color: white;
+}
