@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  /* text-align: center; */
+  align-items: center;
+  height: 100vh;
+}
+
+ul {
+  color: red;
+}
+
+.heading {
+  font-style: italic;
+}
