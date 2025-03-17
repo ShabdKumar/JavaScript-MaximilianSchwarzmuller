@@ -36,3 +36,26 @@ input.setAttribute("value", "Hello123");
 console.log(input.value);
 input.value = input.getAttribute("value");
 console.log(input.value);
+
+const abc = document.querySelector("li:first-of-type");
+const def = document.querySelector("li:first-child");
+
+console.log(abc);
+// console.log(def); // null - Since li is not the first child.
+// def.style.backgroundColor = "red";
+abc.style.backgroundColor = "red";
+
+console.log(ul.children);
+console.log(ul.childNodes);
+
+ul.children[0].style.backgroundColor = "cyan";
+ul.childNodes[3].style.backgroundColor = "magenta";
+
+console.log(ul.closest("body"));
+
+const btn = document.querySelector("button");
+console.log(ul);
+console.log(btn);
+btn.addEventListener("click", () => {
+  ul.classList.toggle("invisible");
+});

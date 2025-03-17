@@ -12,3 +12,16 @@ ul {
 .heading {
   font-style: italic;
 }
+
+div :first-of-type {
+  background-color: pink;
+}
+
+.red-bg {
+  background-color: red;
+  color: white;
+}
+
+.invisible {
+  display: none;
+}
