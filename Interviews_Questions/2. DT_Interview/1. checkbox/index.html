@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox - State_And_Districts</title>
+</head>
+
+<body>
+  <h2>Select Districts:</h2>
+  <div class="states">
+    <div class="state">
+      <div class="arrow state-bihar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd"
+            d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="state-name">
+        <input type="checkbox" name="Bihar" value="bihar">
+        <label for="Bihar">Bihar</label>
+      </div>
+      <div class="districts district-bihar">
+        <div class="district">
+          <input type="checkbox" name="Patna" value="patna">
+          <label for="Patna">Patna</label>
+        </div>
+        <div class="district">
+          <input type="checkbox" name="Gaya" value="gaya">
+          <label for="Gaya">Gaya</label>
+        </div>
+        <div class="district">
+          <input type="checkbox" name="Darbhanga" value="darbhanga">
+          <label for="Darbhanga">Darbhanga</label>
+        </div>
+        <div class="district">
+          <input type="checkbox" name="Katihar" value="katihar">
+          <label for="Katihar">Katihar</label>
+        </div>
+        <div class="district">
+          <input type="checkbox" name="Jamui" value="jamui">
+          <label for="Jamui">Jamui</label>
+        </div>
+      </div>
+    </div>
+    <div class="state">
+    </div>
+  </div>
+
+  <button type="button">Get District</button>
+  <input type="text" class="textResult">
+
+</body>
+
+</html>

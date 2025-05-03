@@ -9,6 +9,7 @@ class DOMHelper {
     const element = document.getElementById(elementId);
     const destinationElement = document.querySelector(newDestinationSelector);
     destinationElement.append(element);
+    element.scrollIntoView({ behavior: "smooth" });
   }
 }
 
@@ -25,7 +26,6 @@ class Component {
   detach() {
     if (this.element) {
       this.element.remove();
-      // this.element.parentElement.removeChild(this.element);
     }
   }
 
@@ -38,8 +38,9 @@ class Component {
 }
 
 class Tooltip extends Component {
-  constructor(closeNotifierFunction) {
-    super();
+  constructor(closeNotifierFunction, text, hostElementId) {
+    super(hostElementId);
+    this.text = text;
     this.closeNotifier = closeNotifierFunction;
     this.create();
   }
@@ -52,7 +53,19 @@ class Tooltip extends Component {
   create() {
     const tooltipElement = document.createElement("div");
     tooltipElement.className = "card";
-    tooltipElement.textContent = "DUMMY!";
+    const templateElement = document.getElementById("template-more-info");
+    const tooltipBody = document.importNode(templateElement.content, true);
+    tooltipBody.querySelector("p").textContent = this.text;
+    tooltipElement.append(tooltipBody);
+    tooltipElement.style.padding = "0px 10px";
+    tooltipElement.style.position = "absolute";
+    tooltipElement.style.top =
+      this.hostElement.offsetTop +
+      this.hostElement.offsetHeight +
+      -this.hostElement.parentElement.scrollTop -
+      10 +
+      "px";
+    tooltipElement.style.left = this.hostElement.offsetLeft + 20 + "px";
     tooltipElement.addEventListener("click", this.closeTooltip);
     this.element = tooltipElement;
   }
@@ -72,9 +85,15 @@ class ProjectItem {
     if (this.hasActiveTooltip) {
       return;
     }
-    const tooltip = new Tooltip(() => {
-      this.hasActiveTooltip = false;
-    });
+    const itemElement = document.getElementById(this.id);
+    const text = itemElement.dataset.extraInfo;
+    const tooltip = new Tooltip(
+      () => {
+        this.hasActiveTooltip = false;
+      },
+      text,
+      this.id
+    );
     tooltip.attach();
     this.hasActiveTooltip = true;
   }
@@ -84,7 +103,7 @@ class ProjectItem {
     const moreInfoBtn = projectItemElement.querySelector(
       "button:first-of-type"
     );
-    moreInfoBtn.addEventListener("click", this.showMoreInfoHandler);
+    moreInfoBtn.addEventListener("click", this.showMoreInfoHandler.bind(this));
   }
 
   connectSwitchButton(type) {
@@ -115,7 +134,6 @@ class ProjectList {
         new ProjectItem(prjItem.id, this.switchProject.bind(this), this.type)
       );
     }
-    console.log(this.projects);
   }
 
   setSwitchHandlerFunction(switchHandlerFunction) {
@@ -129,8 +147,6 @@ class ProjectList {
   }
 
   switchProject(projectId) {
-    // const projectIndex = this.projects.findIndex(p => p.id === projectId);
-    // this.projects.splice(projectIndex, 1);
     this.switchHandler(this.projects.find((p) => p.id === projectId));
     this.projects = this.projects.filter((p) => p.id !== projectId);
   }

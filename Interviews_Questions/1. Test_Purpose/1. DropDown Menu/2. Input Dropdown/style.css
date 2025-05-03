@@ -1,0 +1,21 @@
+.result {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: azure;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  display: none;
+  opacity: 80%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  color: red;
+}

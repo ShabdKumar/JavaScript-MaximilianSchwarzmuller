@@ -1,0 +1,31 @@
+.states {
+  padding-left: 20px;
+}
+
+.districts {
+  padding-left: 40px;
+}
+
+.arrow {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.state-name {
+  display: inline-block;
+}
+
+.invisibility {
+  display: none;
+}
+
+textarea {
+  display: block;
+}

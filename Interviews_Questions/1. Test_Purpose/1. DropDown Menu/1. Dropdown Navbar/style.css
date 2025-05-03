@@ -1,0 +1,44 @@
+.dropdown {
+  float: right;
+  position: relative;
+}
+
+.dropdownButton {
+  border: none;
+  color: white;
+  background-color: oklch(57.7% 0.245 27.325);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdownButton:hover {
+  background-color: oklch(39.6% 0.141 25.723);
+}
+
+.dropdownSelector {
+  min-width: 150px;
+  display: none;
+  background-color: oklch(87% 0 0);
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  min-width: 150px;
+  color: black;
+  padding: 5px;
+}
+
+a:hover {
+  background-color: oklch(43.9% 0 0);
+  color: white;
+}
+
+.show {
+  display: block;
+}
