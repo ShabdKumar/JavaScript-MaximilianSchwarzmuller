@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>BioData</h1>
+  </header>
+  <form>
+    <label for="name">Full Name: <input type="text" name="name" /></label>
+    <label for="d-o-b">Date-of-Birth: <input type="date" name="d-o-b" /></label>
+    <label for="complexion">Complexion:
+      <select name="complexion">
+        <option value="" disabled hidden selected>---Choose Skin Color---</option>
+        <option value="fair">Fair</option>
+        <option value="milky-white">Milky White</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+    <label for="height">Height:
+      <div class="total-height">
+        <input type="number" name="height-feet" class="height" max="7" min="0" placeholder="---feet here---">
+        <input type="number" name="height-inch" class="height" max="11" min="0" placeholder="---inches here---">
+      </div>
+    </label>
+    <label for="weight">Weight: <input type="text" name="weight" placeholder="---in kgs---" /></label>
+
+    <div class="occupation">
+      <label for="job">Job: <input type="text" name="job"></label>
+      <label for="company">Company: <input type="text" name="company"></label>
+      <label for="salary">Salary: <input type="number" name="salary"></label>
+      <label for="job-location">Job-Location: <input type="text" name="job-location"></label>
+    </div>
+
+    <div class="education">
+      <label for="higer-qualification">Higher Qualification: <input type="text" name="higer-qualification"></label>
+      <label for="inter">Intermediate Grade:
+        <div class="division">
+          <div>
+            <input type="radio" name="inter" value="1st" class="inter">1st
+          </div>
+          <div><input type="radio" name="inter" value="2nd" class="inter">2nd
+          </div>
+          <div><input type="radio" name="inter" value="3rd" class="inter">3rd
+          </div>
+        </div>
+      </label>
+      <label for="matric">Matriculation Grade: <div class="division">
+          <div>
+            <input type="radio" name="matric" value="1st" class="inter">1st
+          </div>
+          <div><input type="radio" name="matric" value="2nd" class="inter">2nd
+          </div>
+          <div><input type="radio" name="matric" value="3rd" class="inter">3rd
+          </div>
+        </div></label>
+    </div>
+
+    <div class="family">
+      <label for="father">Father: <input type="text" name="higer-qualification"
+          placeholder="Name with occupation"></label>
+      <label for="mother">Mother: <input type="text" name="inter" placeholder="Name with occupation"></label>
+      <label for="siblings">Siblings: <textarea type="text" name="siblings" placeholder="Name with occupation"
+          rows="2"></textarea></label>
+    </div>
+
+    <div class="personal-data">
+      <label for="profile-pic">Upload a Profile Pic: <input class="pics" type="file" name="profile-pic"></label>
+      <label for="hobbies">Hobbies: <input type="text" name="hobbies"></label>
+      <label for="address">Permanent Address: <textarea type="text" name="address" maxlength="300" rows="3"
+          placeholder="---Enter the Address---"></textarea></label>
+      <label for="contact">Phone Number: <input type="number" name="contact" max="9999999999"></label>
+    </div>
+
+  </form>
+  <button type="button"><strong>Generate BioData</strong></button>
+
+  <img
+    src="https://img.freepik.com/free-photo/hands-indian-bride-groom-intertwined-together-making-authentic-wedding-ritual_8353-10047.jpg?t=st=1746527759~exp=1746531359~hmac=295e4a20579384a1d1f7cefac4d099b294dc3fe9b27bcf1c914a5ca21540040e&w=1380">
+
+</body>
+
+</html>

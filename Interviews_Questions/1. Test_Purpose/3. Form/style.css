@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 0px;
+}
+
+form {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffec99;
+  gap: 10px;
+  font-size: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 16px 2px #e67700;
+}
+
+header,
+form,
+button {
+  z-index: 2;
+}
+
+label,
+.total-height,
+label .division {
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+select,
+.total-height,
+textarea,
+label .division {
+  width: 400px;
+  text-align: center;
+}
+
+.height {
+  width: 195px;
+}
+
+label p {
+  display: inline;
+}
+
+.inter {
+  width: 16px;
+}
+
+.occupation,
+.education,
+.family,
+.personal-data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input,
+textarea,
+select,
+option {
+  cursor: pointer;
+  border: 0.5px solid red;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 10px 5px;
+}
+
+input:hover,
+input:active,
+textarea:hover,
+textarea:active {
+  background-color: #dee2e6;
+}
+
+.pics:hover {
+  background-color: #ffec99;
+}
+
+.pics {
+  border: none;
+  border-radius: 0px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  background-color: #5c7cfa;
+}
+
+strong {
+  font-size: 20px;
+  color: white;
+}
+
+button:hover {
+  background-color: #4263eb;
+}
+
+img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 30%;
+}
