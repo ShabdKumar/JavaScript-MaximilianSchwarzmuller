@@ -20,6 +20,7 @@ form {
   font-size: 20px;
   padding: 20px;
   box-shadow: 5px 5px 16px 2px #e67700;
+  border-radius: 10px;
 }
 
 header,
@@ -112,7 +113,7 @@ button:hover {
   background-color: #4263eb;
 }
 
-img {
+.background-image {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -120,4 +121,22 @@ img {
   height: 100%;
   z-index: 1;
   opacity: 30%;
+}
+
+.arnab,
+.donkey,
+.female,
+.akash,
+.others {
+  position: absolute;
+  top: 0px;
+  left: auto;
+  height: 100%;
+  z-index: 10;
+  opacity: 100%;
+  display: none;
+}
+
+input {
+  font-size: 16px;
 }
