@@ -6,6 +6,7 @@ body {
 div {
   border: 1px solid #ccc;
   padding: 1.5rem 3rem;
+  margin: 5px;
 }
 
 h2 {
@@ -34,4 +35,25 @@ button:active {
   background: #e92f6d;
   border-color: #e92f6d;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+}
+
+#long-page {
+  height: 3000px;
+}
+
+form {
+  margin: 5px;
+}
+
+li {
+  border: 0.5px solid grey;
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.highlight {
+  background-color: greenyellow;
 }

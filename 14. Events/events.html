@@ -11,10 +11,86 @@
 </head>
 
 <body>
-  <div>
+  <div div="First-Div">
     <h2>Events in JavaScript</h2>
-    <button>Click me</button>
+    <button onclick="alert('Event')">On Click HTML</button>
+    <button class="onClick">On Click JS</button>
+    <button class="eventListener">Event Listener</button>
   </div>
+
+  <form action="">
+    <label for="title">Title:
+      <input type="text">
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="Second-Div">
+    <h2>Propagation: Bubbling</h2>
+    <button type="button">Event Bubbling</button>
+    <button type="button">Bubbling Multiple Event</button>
+  </div>
+
+  <div id="Third-Div">
+    <h2>Propagation: Capturing</h2>
+    <button type="button">Event Capturing</button>
+    <button type="button">Capturing Multiple Event</button>
+  </div>
+
+  <div id="Fourth-Div">
+    <h2>No Propagation</h2>
+    <button type="button">Event No-Propagation</button>
+    <button type="button">Multi-Event No-Propagation</button>
+    <button type="button">No-Capturing No Bubbling</button>
+  </div>
+
+  <div id="Fifth-Div">
+    <h2>Mutiple Click Listener</h2>
+    <ul>
+      <li>Item-1</li>
+      <li>Item-2</li>
+      <li>Item-3</li>
+    </ul>
+  </div>
+
+  <div id="Sixth-Div">
+    <h2>Single Click Listener</h2>
+    <ul>
+      <li>Item-1</li>
+      <li>Item-2</li>
+      <li>Item-3</li>
+    </ul>
+  </div>
+
+  <div id="Seventh-Div">
+    <h2>Single Click Listener: list with multiple element</h2>
+    <ul>
+      <li>
+        <h3>Item-1</h3>
+        <p>Some Text</p>
+      </li>
+      <li>
+        <h3>Item-2</h3>
+        <p>Some Text</p>
+      </li>
+    </ul>
+  </div>
+
+  <div id="Eighth-Div">
+    <h2>Single Click Listener: list with multiple element - Fixed</h2>
+    <ul>
+      <li>
+        <h3>Item-1</h3>
+        <p>Some Text</p>
+      </li>
+      <li>
+        <h3>Item-2</h3>
+        <p>Some Text</p>
+      </li>
+    </ul>
+  </div>
+
+  <section id="long-page"></section>
 </body>
 
 </html>
